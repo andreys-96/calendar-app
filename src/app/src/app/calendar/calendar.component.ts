@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarOptions } from '@arjentienkamp/ngx-mat-calendar'
 
 @Component({
   selector: 'app-calendar',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calendar.component.scss']
 })
 export class CalendarComponent implements OnInit {
-
-  constructor() { }
+  calendarOptions: CalendarOptions;
+  events: any[] = [];
+  date: Date = new Date()
+  constructor() {
+    this.calendarOptions = new CalendarOptions()
+   }
 
   ngOnInit(): void {
+    console.log(this.date)
+  }
+
+  handleEventClick(event: any){}
+  handleDateChange(event: any){}
+  handleAddButtonClick(){
+    
   }
 
 }

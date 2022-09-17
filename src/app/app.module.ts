@@ -7,15 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './src/app/home-page/home-page.component';
 import { CalendarComponent } from './src/app/calendar/calendar.component';
 import { NavbarComponent } from './src/app/navbar/navbar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     CalendarComponent,
-    NavbarComponent
   ],
   imports: [
+    NgbModule,
+    NavbarComponent,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
